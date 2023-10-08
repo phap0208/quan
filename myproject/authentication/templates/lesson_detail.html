@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ lesson.title }}</title>
+    <style>
+        /* CSS tại đây */
+        /* Đặt kiểu cho tiêu đề */
+        h1 {
+            color: #333; /* Màu chữ */
+            font-size: 24px; /* Kích thước chữ */
+        }
+
+        /* Đặt kiểu cho đoạn văn bản */
+        p {
+            font-size: 16px;
+        }
+
+        /* Đặt kiểu cho liên kết */
+        a {
+            text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+            color: #0077cc; /* Màu liên kết */
+        }
+
+        /* Đặt kiểu cho liên kết khi di chuột qua */
+        a:hover {
+            text-decoration: underline; /* Gạch chân dưới liên kết khi di chuột qua */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ lesson.title }}</h1>
+    <p>{{ lesson.content }}</p>
+
+    <div>
+        <a href="{% url 'home'  %}">Về trang chủ</a>
+    </div>
+</body>
+</html>
